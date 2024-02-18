@@ -15,7 +15,12 @@ class RootPage extends StatefulWidget {
 class _RootPageState extends State<RootPage> {
   int _currentIndex = 2;
 
-  List<Widget> _pages = [ChatPage(), FriendPage(), DiscoveryPage(), BookPage()];
+  final List<Widget> _pages = [
+    ChatPage(),
+    const FriendPage(),
+    const DiscoveryPage(),
+    const BookPage()
+  ];
 
   @override
   Widget build(BuildContext context) {
